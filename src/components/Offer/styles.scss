@@ -1,0 +1,50 @@
+.offer {
+    background-color: rgba(0, 255, 133, 0.08);
+    padding: 100px 0px;
+    text-align: center;
+
+    @media (max-width: 768px) {
+        padding: 89px 47px 53px;
+    }
+
+    &__container {
+        background: url("../../assets/icons/triangle.svg") bottom 25px left 15px no-repeat,
+        url("../../assets/icons/triangle.svg") top 40px right no-repeat;
+
+        @media (max-width: 768px) {
+            background-position: top 60px right 0px, bottom 0px left 40px;
+            padding-bottom: 129px;
+        }
+    }
+
+    &__title {
+        font-size: 40px;
+        margin-bottom: 103px;
+
+        @media (max-width: 768px) {
+            margin-bottom: 114px;
+        }
+    }
+
+    &__container-inner {
+        max-width: 824px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 56px;
+        margin: 0 auto;
+
+        @media (max-width: 768px) {
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            row-gap: 67px;
+            max-width: 253px;
+        }
+    }
+
+    &__card-text {
+        font-size: 16px;
+        margin-top: 24px;
+        line-height: 27px;
+        color: #000C2D;
+    }
+}
